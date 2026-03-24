@@ -1,0 +1,1 @@
+Implementation of Norvig's sudoku solver: https://github.com/norvig/pytudes/blob/main/ipynb/Sudoku.ipynb
