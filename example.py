@@ -65,13 +65,18 @@ def eliminate(values, s, d):
     return values
 
 
+def display(values):
+    "Display these values as a 2-D grid."
+    width = 1+max(len(values[s]) for s in squares)
+    line = '+'.join(['-'*(width*3)]*3)
+    for r in rows:
+        print(''.join(values[r+c].center(width)+('|' if c in '36' else '')
+            for c in cols))
+        if r in 'CF': print(line)
+    print()
 
 
 
+grid = '003020600900305001001806400008102900700000008006708200002609500800203009005010300'
 
-
-
-
-grid = "4.....8.5.3..........7......2.....6.....8.4......1.......6.3.7.5..2.....1.4......"
-
-print(grid_values(grid))
+display(parse_grid(grid))
