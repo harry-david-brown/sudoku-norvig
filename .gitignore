@@ -1,0 +1,21 @@
+# Dataset — download from https://www.kaggle.com/datasets/bryanpark/sudoku
+sudoku.csv
+*.csv
+ 
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+ 
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+ 
+# Environment
+.env
+*.egg-info/
+ 
+# OS
+.DS_Store
+ 
